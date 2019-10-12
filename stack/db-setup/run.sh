@@ -1,4 +1,4 @@
-if [ -z "MYSQL_ROOT_PASSWORD"]; then
+if [ -z "MYSQL_ROOT_PASSWORD" ]; then
 
 exit 1
 fi
