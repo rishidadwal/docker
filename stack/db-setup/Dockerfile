@@ -1,4 +1,5 @@
-FROM  centos
-RUN yum install httpd -y
-COPY studentapp.sql /tmp/studentapp.sql
-CMD mysql -uroot -proot < /tmp/studentapp.sql
+FROM centos
+RUN yum install mariadb -y
+COPY run.sh  /run.sh
+RUN chmod +x /run.sh
+CMD /run.sh
