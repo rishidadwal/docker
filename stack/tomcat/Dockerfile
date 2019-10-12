@@ -1,5 +1,4 @@
 FROM tomcat
-RUN yum install mariadb telnet
 ADD   https://s3-us-west-2.amazonaws.com/studentapi-cit/student.war webapps/student.war
 ADD   https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar lib/mysql-connector.jar
 ADD   context.xml conf/context.xml
