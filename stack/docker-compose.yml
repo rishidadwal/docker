@@ -9,3 +9,8 @@ services:
     build:  tomcat/.
     ports:
     - "8080:8080"
+
+  mariabd:
+    image: mariadb
+  
+
