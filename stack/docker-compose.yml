@@ -12,7 +12,7 @@ services:
   db-setup:
     build:  db-setup/.
 
-  mariabd:
+  mariadb:
     image: mariadb
     environment:
       MYSQL_ROOT_PASSWORD: root
